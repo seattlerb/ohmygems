@@ -1,0 +1,13 @@
+=== 1.1.0 / 2013-02-24
+
+* 3 minor enhancements
+
+  * Added usage w/ clean listing of known repos.
+  * Added omg alias.
+  * Delay creation of ORIG_* vars until ohmygems is used.
+
+=== 1.0.0 / 2012-09-21
+
+* 1 major enhancement
+
+  * Birthday!
