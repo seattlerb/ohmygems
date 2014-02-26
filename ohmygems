@@ -48,6 +48,7 @@ ohmygems() {
         export GEM_PATH=${ORIG_GEM_HOME}:${ORIG_GEM_PATH}
         export PATH=${ORIG_PATH}:${GEM_HOME}/bin
 
+        [ -d $GEM_HOME ] || mkdir -p $GEM_HOME
         OMG_NAME=${name}
     fi
 }
