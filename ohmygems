@@ -14,7 +14,7 @@ ohmygems() {
         echo
         echo "  Switches gem home to a (potentially new) named repo."
         echo "  Your previous gems are still visible,"
-        echo "  but new gem installs will install into ~/.gems/repos/<name>."
+        echo "  but new gem installs will install into ~/.gem/repos/<name>."
         echo "  Use 'reset' to go back to normal."
         echo
         echo "Available repos in ~/.gem/repos:"
