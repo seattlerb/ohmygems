@@ -22,6 +22,10 @@ Hoe.spec "ohmygems" do
 
       source $(gem env gemdir)/gems/ohmygems-#{self.version}/ohmygems_chruby
 
+    If you want to auto set the gem env with a .ruby-gemset file, add:
+
+      source $(gem env gemdir)/gems/ohmygems-#{self.version}/ohmygems_auto
+
   EOM
 end
 
