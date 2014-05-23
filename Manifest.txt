@@ -3,3 +3,4 @@ Manifest.txt
 README.txt
 Rakefile
 ohmygems
+ohmygems_chruby
