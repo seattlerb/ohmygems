@@ -1,0 +1,23 @@
+# -*- sh -*-
+
+function ohmygems_auto() {
+    local dir="$PWD"
+    local gemset
+
+    until [[ -z "$dir" ]]; do
+        if { read -r gemset <"$dir/.ruby-gemset"; } 2>/dev/null || [[ -n "$gemset" ]]; then
+            ohmygems "$gemset"
+            return $?
+        fi
+
+        dir="${dir%/*}"
+    done
+}
+
+if [[ -n "$ZSH_VERSION" ]]; then
+    if [[ ! "$preexec_functions" == *ohmygems_auto* ]]; then
+        preexec_functions+=("ohmygems_auto")
+    fi
+elif [[ -n "$BASH_VERSION" ]]; then
+    trap '[[ "$BASH_COMMAND" != "$PROMPT_COMMAND" ]] && ohmygems_auto' DEBUG
+fi
