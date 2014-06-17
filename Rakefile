@@ -10,7 +10,7 @@ Hoe.spec "ohmygems" do
 
   license "MIT"
 
-  self.version = "1.1.0"
+  self.version = "1.2.0"
 
   self.post_install_message = <<-"EOM"
 

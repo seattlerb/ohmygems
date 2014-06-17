@@ -1,3 +1,18 @@
+=== 1.2.0 / 2014-06-17
+
+* 6 minor enhancements:
+
+  * Added 'omg env' command to show relevant environment info. (blowmage)
+  * Added OMG_NAME variable to make it easier to program. (blowmage)
+  * Added ohmygems_auto. (blowmage)
+  * Added ohmygems_chruby. (blowmage)
+  * Expanded help and made prettier.
+  * Removed env info from normal repo switch handling. (blowmage)
+
+* 1 bug fix:
+
+  * Put gem PATH item in front of original.
+
 === 1.1.0 / 2013-02-24
 
 * 3 minor enhancements
